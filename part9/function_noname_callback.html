@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+            function callTenTimes(callback_end){
+                for(var i=0;i<10;i++){
+                    callback_end(i);
+                }
+            }
+
+            // callTenTimes(function(i){
+            //     alert("함수1호출 "+i);
+            //     document.write("<br>함수1호출 "+i);
+            //     console.log("함수1호출 "+i);
+            // });
+            // callTenTimes(callback);
+
+           var callback_move = function coll_back_move(i){
+                document.write("<br>함수2호출 "+i);
+                console.log("함수2호출 "+i);
+            }
+            callTenTimes(callback_move);            
+        </script>     
+    </head>
+    <body>
+    </body>
+</HTML>

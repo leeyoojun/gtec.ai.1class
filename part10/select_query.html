@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+            window.onload = function(){
+                var header = document.querySelector('h1');
+                obj_header(header);
+            };
+
+            function obj_header(obj1){
+                obj1.style.color = 'red';
+                obj1.style.background = 'blue';
+                obj1.innerHTML = 'Form JavaScript';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Header1</h1>
+        <h1>Header2</h1>
+        <h1>Header3</h1>
+        <h1>Header4</h1>
+    </body>
+</HTML>

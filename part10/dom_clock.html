@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+        window.onload = function(){
+            var clock = document.getElementById('clock');
+
+            var clock_time_display = function(){
+                clock_text(clock);
+            };
+            setInterval(clock_time_display,1000);
+        };
+
+        function clock_text(clock){
+            var now = new Date();
+            clock.innerHTML=now.toString();
+        }
+        </script>
+    </head>
+    <body>
+        <h1 id="clock"></h1>
+    </body>
+</HTML>

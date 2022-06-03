@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+        window.onload = function(){
+            var output = "";
+            for(var i=0;i<10;i++){
+                output += '<h1>Header - ' + i + '</h1>';
+            }
+
+            //   document.body.textContent = output;
+            document.body.innerHTML = output;
+              
+            var headers = document.querySelectorAll('h1');
+            for(var i=0;i<headers.length;i++){
+                obj_header(headers[i],i);
+            }
+        };
+
+        function obj_header(obj1,i){
+            obj1.style.color = 'red';
+            obj1.style.background = 'blue';
+            // obj1.innerHTML = 'Form JavaScript ' + i;
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+</HTML>

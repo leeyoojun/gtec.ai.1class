@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+        window.onload = function(){
+            var image = document.getElementById('image1');
+
+            image.src = 'https://via.placeholder.com/300x200';
+            image.width = 300;
+            image.height = 200;
+
+            document.body.setAttribute('data-custom','value100');
+            var datacustom = document.body.getAttribute('data-custom');
+            alert(datacustom);
+            // document.write(datacustom);
+            console.log(datacustom);
+        };
+        </script>
+    </head>
+    <body>
+        <img id="image1">
+    </body>
+</HTML>

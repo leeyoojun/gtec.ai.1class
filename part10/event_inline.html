@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+            function buttonclick(){
+                document.write('click2');
+                console.log('click2');
+            }
+
+            window.onload = function(){
+                var button = document.getElementById('button');
+                button.onclick = function(){
+                    document.write('click3');
+                    console.log('click3');
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <button onclick="alert('click1')">버튼1</button>
+        <button onclick="buttonclick()">버튼2</button>
+        <button id="button">버튼3</button>
+    </body>
+</HTML>

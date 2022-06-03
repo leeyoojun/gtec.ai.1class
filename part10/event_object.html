@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>html5 basic page</title>
+        <script>
+            window.onload = function(event){
+                alert(event);
+                var button = document.getElementById('button');
+                button.onclick = function(){
+                    alert('onclick 이벤트 제거');
+                    return false;
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <a id="button" href="http://naver.com">네이버 이동버튼</a>
+    </body>
+</HTML>
